@@ -1,0 +1,133 @@
+/* General container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=1600"); 
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form container styling */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form title */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+/* Input fields */
+.input-field {
+  width: 90%; /* Reduce width to fit inside the container */
+  max-width: 350px; /* Prevent it from getting too large */
+  padding: 8px; /* Adjust padding for better appearance */
+  margin: 8px auto; /* Center the input fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block; /* Ensure inputs stay within the form */
+}
+
+/* Add button styling (Medium size) */
+.add-button {
+  width: 150px; /* Medium width */
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 10px auto; /* Centers the button */
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Table container */
+.table-container {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Table title */
+.table-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Table styles */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.data-table th, .data-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #023652;
+  color: white;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* Ensures buttons are side by side in table */
+td {
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Update button */
+.update-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #218838;
+}
+
+/* Delete button */
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
